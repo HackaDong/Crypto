@@ -3,7 +3,7 @@ XEX-based tweaked-codebook mode with ciphertext stealing
 ## 特性  
 1. 和ECB模式相比，每个block加密得到的密文不同
 2. 引入tweak代替iv，每个block加密的tweak都会变化，使各个block的加解密相互独立，可以随机访问
-3. AES-XTS128和AES-XTS256分别需要256bit和512bit长度的key
+3. AES-XTS128和AES-XTS256分别需要256bit(128key+128tweak)和384bit(256key+128tweak)长度的key
 4. 可以并行化加解密
 ## 原理  
 ![image](https://user-images.githubusercontent.com/20694600/123729112-0a6ded80-d8c7-11eb-8df2-8041f442ad20.png)
