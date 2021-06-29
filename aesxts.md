@@ -1,4 +1,5 @@
 # AES-XTS  
+XEX-based tweaked-codebook mode with ciphertext stealing
 ## 特性  
 1. 和ECB模式相比，每个block加密得到的密文不同
 2. 引入tweak代替iv，每个block加密的tweak都会变化，使各个block的加解密相互独立，可以随机访问
