@@ -163,4 +163,4 @@ int main (void)
   return 0;
 }
 ```
-# gcc aesxts.c -lcrypto -o aesxts
+$ gcc aesxts.c -lcrypto -o aesxts
